@@ -107,6 +107,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             angleX = Mathf.Clamp (angleX, MinimumX, MaximumX);
 
             q.x = Mathf.Tan (0.5f * Mathf.Deg2Rad * angleX);
+			Debug.Log (q.eulerAngles.z);
+			q = Quaternion.Euler(q.eulerAngles.x,Mathf.Clamp(q.eulerAngles.y,-90,90),q.eulerAngles.z);
 
             return q;
         }

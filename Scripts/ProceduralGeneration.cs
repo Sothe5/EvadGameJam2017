@@ -34,7 +34,7 @@ public class ProceduralGeneration : MonoBehaviour {
 		for (int i = 0; i < this.generatedChunks.Count; i++) {
 			GameObject chunk = this.generatedChunks [i];
 			float chunkLength = chunk.GetComponent<Chunk>().length;
-			if (chunk.transform.position.z + chunkLength < this.transform.position.z) {
+			if (chunk.transform.position.z + chunkLength*2 < this.transform.position.z) {
 				this.generatedChunks.Remove (chunk);
 				GameObject newChunk = this.GetChunk ();
 				chunkLength = newChunk.GetComponent<Chunk> ().length;

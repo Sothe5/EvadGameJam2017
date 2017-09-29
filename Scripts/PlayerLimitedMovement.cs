@@ -12,6 +12,10 @@ public class PlayerLimitedMovement: MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3(this.transform.position.x,this.transform.position.y,StartingPoint);
+		if (eulerRotation.y < -90) {
+			transform.localEulerAngles = new Vector3 (eulerRotation.x, -90, eulerRotation.z);
+		} else if (eulerRotation.y > 90) {
+			transform.localEulerAngles = new Vector3 (eulerRotation.x, 90, eulerRotation.z);
+		}
 	}
 }
