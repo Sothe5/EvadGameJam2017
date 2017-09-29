@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour {
 
-    public float damage = 5;
+    public float damage = 10;
 
     private Health health;
 
