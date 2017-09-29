@@ -11,6 +11,7 @@ public class Health : MonoBehaviour {
     public float amountToHeal = 3;
     public Camera footCamera;
     public Image healthBar;
+    public GameObject deadPanel;
 
     private float actualHealth;
     private float timer;
@@ -33,18 +34,21 @@ public class Health : MonoBehaviour {
         ActualizeHealthBar();
         if(actualHealth <= 0)
         {
+            actualHealth = 0;
             footCamera.enabled = true;
+            deadPanel.SetActive(true);
             Time.timeScale = 0;
         }
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         timer += Time.deltaTime;
         if(timer >= timeToHeal)
         {
-            actualHealth += amountToHeal * Time.deltaTime;
-            ModifyHeadBob(amountToHeal * Time.deltaTime / health);
+            actualHealth += amountToHeal;
+            if (actualHealth >= health) actualHealth = health;
+            ModifyHeadBob(amountToHeal/health);
             ActualizeHealthBar();
             timer = 0;
         }
