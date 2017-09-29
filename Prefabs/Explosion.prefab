@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 5
   powerRange:
-  - 2.5
+  - 7.5
   - 25
   upForce: 1
 --- !u!114 &114570056554389100
