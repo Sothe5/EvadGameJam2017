@@ -12,6 +12,7 @@ public class Explosion : MonoBehaviour {
     private Collider[] parts;
     private Rigidbody rb;
     private bool activated;
+    private float power;
 
     private void Awake()
     {
@@ -35,9 +36,9 @@ public class Explosion : MonoBehaviour {
         foreach(Collider hit in parts)
         {
             rb = hit.GetComponent<Rigidbody>();
-            if (rb != null)
+            if (rb != null && !rb.CompareTag("Player"))
             {
-                float power = Random.Range(powerRange[0], powerRange[1]);
+                power = Random.Range(powerRange[0], powerRange[1]);
                 Debug.Log(power);
                 rb.AddExplosionForce(power, explosionPosition, radius, upForce, ForceMode.Impulse);
             }
