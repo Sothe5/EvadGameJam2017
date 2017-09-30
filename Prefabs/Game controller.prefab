@@ -80,10 +80,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed0819a10d2d54488e83c995904ad46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToChangeLight: 5
+  timeToChangeLight: 1
   changedLight: {fileID: 0}
-  skyboxDay: {fileID: 2100000, guid: fdb77c3917027234db7a7792019eda2e, type: 2}
-  skyboxNight: {fileID: 2100000, guid: 0eaee02ea09b24dec96f8aaaf63710f3, type: 2}
+  rotationDay: {x: 45, y: -30, z: 0}
+  rotationNight: {x: 180, y: -30, z: 0}
   day: {r: 0.6985294, g: 0.53473634, b: 0, a: 0}
   night: {r: 0, g: 0.08113594, b: 0.7352941, a: 0}
 --- !u!114 &114979934913922608
