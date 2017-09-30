@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class FogMovement : MonoBehaviour {
 
+	public float offset;
+
     private GameObject player;
+
 
     private void Awake()
     {
@@ -14,6 +17,6 @@ public class FogMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = new Vector3(transform.position.x, transform.position.y, 
-            player.transform.position.z + 30);
+            player.transform.position.z + offset);
 	}
 }

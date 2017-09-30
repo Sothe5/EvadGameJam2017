@@ -128,7 +128,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1453359895146626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7, z: 0}
+  m_LocalPosition: {x: 0, y: 3.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4774410605506808}
@@ -154,7 +154,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 200
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -324,7 +324,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chunks:
   - {fileID: 1092275814846730, guid: 2c1d18e0282364007b49192ef30032c2, type: 2}
-  - {fileID: 1092275814846730, guid: 2c1d18e0282364007b49192ef30032c2, type: 2}
+  - {fileID: 1853716927824568, guid: e95bc760e8bec4c4b9402635f340387d, type: 2}
+  - {fileID: 1170989005430780, guid: a6a69d992a2e00849ab0b3d0d47327b6, type: 2}
+  - {fileID: 1507251828536042, guid: d6be7cbfca93fc549b3c5b43d17b5fe8, type: 2}
+  - {fileID: 1933549508023872, guid: 045d620c4de544e30857b064b443e6a1, type: 2}
   speed: 15
   chunksAhead: 7
 --- !u!114 &114487103552154070
