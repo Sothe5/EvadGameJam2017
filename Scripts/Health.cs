@@ -12,16 +12,14 @@ public class Health : MonoBehaviour {
     public Camera footCamera;
     public Image healthBar;
     public GameObject deadPanel;
-
+	private FirstPersonController controller;
     private float actualHealth;
     private float timer;
-    private FirstPersonController controller;
-
-    private void Awake()
+    private void Start()
     {
         healthBar.fillAmount = 1;
         actualHealth = health;
-        controller = this.GetComponent<FirstPersonController>();
+		controller = this.GetComponent<FirstPersonController>();
     }
 
     public void Damage(float damage)
@@ -66,6 +64,7 @@ public class Health : MonoBehaviour {
     private void ModifyHeadBob(float bob)
     {
 		if (controller) {
+			Debug.Log ("controller");
 			controller.m_HeadBob.HorizontalBobRange += bob;
 			controller.m_HeadBob.VerticalBobRange += bob;
 		}
