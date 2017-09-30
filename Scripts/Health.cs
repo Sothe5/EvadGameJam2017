@@ -30,7 +30,7 @@ public class Health : MonoBehaviour {
     {
         timer = 0;
         actualHealth -= damage;
-        if(actualHealth > 0) ModifyHeadBob(damage/health);
+        ModifyHeadBob(-damage/health);
         ActualizeHealthBar();
         if(actualHealth <= 0)
         {
@@ -48,12 +48,7 @@ public class Health : MonoBehaviour {
         {
             actualHealth += amountToHeal;
             if (actualHealth >= health) actualHealth = health;
-            if (actualHealth != health)  ModifyHeadBob(-amountToHeal/health);
-            else if(actualHealth == health)
-            {
-                controller.m_HeadBob.HorizontalBobRange = 0.1f;
-                controller.m_HeadBob.VerticalBobRange = 0.1f;
-            }
+            ModifyHeadBob(amountToHeal/health);
             ActualizeHealthBar();
             timer = 0;
         }
