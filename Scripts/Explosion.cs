@@ -45,8 +45,7 @@ public class Explosion : MonoBehaviour
                 rb.AddExplosionForce(power, explosionPosition, radius, upForce, ForceMode.Impulse);
             }
         }
-        GameObject particle = Instantiate(particleSystem, transform.position, Quaternion.identity);
-        particle.transform.SetParent(transform);
+        particleSystem.SetActive(true);
     }
 
 }
