@@ -45,7 +45,7 @@ public class Explosion : MonoBehaviour
                 rb.AddExplosionForce(power, explosionPosition, radius, upForce, ForceMode.Impulse);
             }
         }
-        particleSystem.SetActive(true);
+		//particleSystem.SetActive (true);
     }
 
 }
