@@ -278,7 +278,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1321196345586898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 14.5, z: -13.95}
+  m_LocalPosition: {x: 0, y: 15.9, z: -13.95}
   m_LocalScale: {x: 1, y: 4.7165704, z: 1}
   m_Children: []
   m_Father: {fileID: 224052645227888298}
@@ -1115,7 +1115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc8580bb59d19f469dead6fb84afd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
 --- !u!114 &114204850657262926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc8580bb59d19f469dead6fb84afd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
 --- !u!114 &114249602802765046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1139,7 +1139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc8580bb59d19f469dead6fb84afd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
 --- !u!114 &114313575728562180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1151,7 +1151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc8580bb59d19f469dead6fb84afd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
 --- !u!114 &114362814903183878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1163,7 +1163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc8580bb59d19f469dead6fb84afd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
 --- !u!114 &114407154884018438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc8580bb59d19f469dead6fb84afd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
 --- !u!114 &114504730260059670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 5
   powerRange:
-  - 7.5
+  - 10
   - 50
   upForce: 1
 --- !u!114 &114570056554389100
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc8580bb59d19f469dead6fb84afd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
 --- !u!114 &114600007728572498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1215,7 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc8580bb59d19f469dead6fb84afd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
 --- !u!114 &114691246561711914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc8580bb59d19f469dead6fb84afd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
 --- !u!114 &114835434620980094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1239,7 +1239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc8580bb59d19f469dead6fb84afd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
 --- !u!135 &135047819600351440
 SphereCollider:
   m_ObjectHideFlags: 1
