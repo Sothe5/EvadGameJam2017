@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4072150836590594}
   - component: {fileID: 33263734416717122}
   - component: {fileID: 23245902551255840}
+  - component: {fileID: 64326495516524712}
   m_Layer: 0
   m_Name: TierraFlotante01
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1387405806324456}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 8.6271, y: -1.1764, z: 9.0659}
+  m_LocalPosition: {x: 106.49926, y: 67.00141, z: -20.293467}
   m_LocalScale: {x: 635.06573, y: 635.0661, z: 635.0661}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,4 +85,18 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1387405806324456}
+  m_Mesh: {fileID: 4300006, guid: 8d7a7c996bc834bc48d440a9a070446e, type: 3}
+--- !u!64 &64326495516524712
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1387405806324456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300006, guid: 8d7a7c996bc834bc48d440a9a070446e, type: 3}

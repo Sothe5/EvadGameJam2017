@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4377926247927296}
   - component: {fileID: 33812307362814056}
   - component: {fileID: 23511513810808740}
+  - component: {fileID: 65979320822318354}
   m_Layer: 0
   m_Name: Escenario02
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1246154808771502}
   m_LocalRotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.868427, y: -0.5990019, z: -39.735462}
+  m_LocalPosition: {x: 62.839897, y: 34.703674, z: -10.147942}
   m_LocalScale: {x: 38.603714, y: 38.60375, z: 38.60375}
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,3 +86,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1246154808771502}
   m_Mesh: {fileID: 4300000, guid: 8d7a7c996bc834bc48d440a9a070446e, type: 3}
+--- !u!65 &65979320822318354
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1246154808771502}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.29194725, y: 0.22999729, z: 1.9937598}
+  m_Center: {x: 0, y: 0, z: 0}
