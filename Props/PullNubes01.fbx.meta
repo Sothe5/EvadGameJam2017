@@ -275,7 +275,52 @@ ModelImporter:
     4300096: TierraFlotante01
     4300098: TierraFlotante03
     4300100: TierraFlotante02
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Blanco
+    second: {fileID: 2100000, guid: 1f637948da130e142b0851ce8f471cf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_BlancoSombra
+    second: {fileID: 2100000, guid: 37af168a9f2c072498086417d52ad12e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Marron
+    second: {fileID: 2100000, guid: 166550f778bdf5a46896d0407015ccf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MarronBase
+    second: {fileID: 2100000, guid: c544afd272f551444a91479354fbe58b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MarronOscuro
+    second: {fileID: 2100000, guid: 8fccf0d43fdbc3040887d6bff5e992cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MarronSombraClara
+    second: {fileID: 2100000, guid: 4cbee45c4748aab41a5a75fb64e5e406, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_PiedraBase
+    second: {fileID: 2100000, guid: 2fff9cfa54f52fd44a1bbc0e64333dc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_PiedraParticula
+    second: {fileID: 2100000, guid: e9716d03ea25ea24c9d49cfa3f8aca8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_PiedraSombra
+    second: {fileID: 2100000, guid: 61a736e255e999e4ea86c392e79cd445, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

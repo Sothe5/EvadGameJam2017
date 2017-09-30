@@ -17,8 +17,10 @@ public class Damage : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
+		
         if (!rb.isKinematic && collision.gameObject.CompareTag("Player"))
-        {
+        {  
+			Debug.Log ("DOLOR");
             health.Damage(damage);
         }
     }
