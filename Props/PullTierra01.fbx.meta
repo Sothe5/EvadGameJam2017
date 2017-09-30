@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: 8d7a7c996bc834bc48d440a9a070446e
+timeCreated: 1506724456
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Escenario01
+    100002: Escenario02
+    100004: //RootNode
+    100006: RocaCamino01
+    100008: TierraFlotante01
+    100010: TierraFlotante02
+    100012: TierraFlotante03
+    400000: Escenario01
+    400002: Escenario02
+    400004: //RootNode
+    400006: RocaCamino01
+    400008: TierraFlotante01
+    400010: TierraFlotante02
+    400012: TierraFlotante03
+    2100000: M_MarronBase
+    2100002: M_MarronSombraClara
+    2100004: M_Marron
+    2100006: M_MarronOscuro
+    2300000: Escenario01
+    2300002: Escenario02
+    2300004: RocaCamino01
+    2300006: TierraFlotante01
+    2300008: TierraFlotante02
+    2300010: TierraFlotante03
+    3300000: Escenario01
+    3300002: Escenario02
+    3300004: RocaCamino01
+    3300006: TierraFlotante01
+    3300008: TierraFlotante02
+    3300010: TierraFlotante03
+    4300000: Escenario02
+    4300002: Escenario01
+    4300004: RocaCamino01
+    4300006: TierraFlotante01
+    4300008: TierraFlotante03
+    4300010: TierraFlotante02
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Marron
+    second: {fileID: 2100000, guid: 7dbaa2fd46cfd465483a501c0fec477b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MarronBase
+    second: {fileID: 2100000, guid: 0eaee02ea09b24dec96f8aaaf63710f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MarronOscuro
+    second: {fileID: 2100000, guid: 28f25de80979d47468b0a86b46ccb2f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MarronSombraClara
+    second: {fileID: 2100000, guid: 999bcbbd0315a4a7280154644694550b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

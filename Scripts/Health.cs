@@ -1,0 +1,73 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
+
+public class Health : MonoBehaviour {
+
+    public float health = 50;
+    public float timeToHeal = 5;
+    public float amountToHeal = 3;
+    public Camera footCamera;
+    public Image healthBar;
+    public GameObject deadPanel;
+	private FirstPersonController controller;
+    private float actualHealth;
+    private float timer;
+    private void Start()
+    {
+        healthBar.fillAmount = 1;
+        actualHealth = health;
+		controller = this.GetComponent<FirstPersonController>();
+    }
+
+    public void Damage(float damage)
+    {
+        timer = 0;
+        actualHealth -= damage;
+        if(actualHealth > 0) ModifyHeadBob(damage/health);
+        ActualizeHealthBar();
+        if(actualHealth <= 0)
+        {
+            actualHealth = 0;
+            footCamera.enabled = true;
+            deadPanel.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        timer += Time.deltaTime;
+        if(timer >= timeToHeal)
+        {
+            actualHealth += amountToHeal;
+            if (actualHealth >= health) actualHealth = health;
+            if (actualHealth != health)  ModifyHeadBob(-amountToHeal/health);
+			else if(actualHealth == health && controller)
+            {
+                controller.m_HeadBob.HorizontalBobRange = 0.1f;
+                controller.m_HeadBob.VerticalBobRange = 0.1f;
+            }
+            ActualizeHealthBar();
+            timer = 0;
+        }
+    }
+
+    private void ActualizeHealthBar()
+    {
+        healthBar.fillAmount = actualHealth / health;
+        if (actualHealth <= 0) healthBar.fillAmount = 0;
+    }
+
+    private void ModifyHeadBob(float bob)
+    {
+		if (controller) {
+			Debug.Log ("controller");
+			controller.m_HeadBob.HorizontalBobRange += bob;
+			controller.m_HeadBob.VerticalBobRange += bob;
+		}
+        
+    }
+}
