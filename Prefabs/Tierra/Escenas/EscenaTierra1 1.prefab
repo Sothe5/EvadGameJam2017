@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4783103747875990}
   - component: {fileID: 33276015985031632}
   - component: {fileID: 23407962125032126}
+  - component: {fileID: 114165104156610102}
+  - component: {fileID: 64785948059305176}
   m_Layer: 0
   m_Name: RocaCamino01
   m_TagString: Untagged
@@ -56,6 +58,8 @@ GameObject:
   - component: {fileID: 4981859640694162}
   - component: {fileID: 33638186934934454}
   - component: {fileID: 23667758098403164}
+  - component: {fileID: 64540322153263030}
+  - component: {fileID: 114409374565751752}
   m_Layer: 0
   m_Name: RocaCamino01 (1)
   m_TagString: Untagged
@@ -73,6 +77,8 @@ GameObject:
   - component: {fileID: 4885295859501478}
   - component: {fileID: 33965315111648258}
   - component: {fileID: 23903124474603200}
+  - component: {fileID: 114992206169199108}
+  - component: {fileID: 64662186281375598}
   m_Layer: 0
   m_Name: RocaCamino01 (2)
   m_TagString: Untagged
@@ -134,7 +140,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1933549508023872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.62, y: 14.544607, z: -43.045464}
+  m_LocalPosition: {x: 794.42957, y: 604.84125, z: -7.169366}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4722535365436090}
@@ -417,6 +423,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1576677037793280}
   m_Mesh: {fileID: 4300004, guid: 8d7a7c996bc834bc48d440a9a070446e, type: 3}
+--- !u!64 &64540322153263030
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445605041274336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 8d7a7c996bc834bc48d440a9a070446e, type: 3}
+--- !u!64 &64662186281375598
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576677037793280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 8d7a7c996bc834bc48d440a9a070446e, type: 3}
+--- !u!64 &64785948059305176
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1318544538080306}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 8d7a7c996bc834bc48d440a9a070446e, type: 3}
 --- !u!65 &65027071675087900
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -441,6 +489,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.29194725, y: 0.22999729, z: 1.9937598}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114165104156610102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1318544538080306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81c4d6a205644711bdb37a731df7666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 33
 --- !u!114 &114364032926550864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -453,3 +513,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   length: 93.2
+--- !u!114 &114409374565751752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445605041274336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81c4d6a205644711bdb37a731df7666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 33
+--- !u!114 &114992206169199108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576677037793280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81c4d6a205644711bdb37a731df7666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 33
