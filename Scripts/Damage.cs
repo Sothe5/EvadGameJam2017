@@ -25,6 +25,7 @@ public class Damage : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+		Debug.Log ("pum");
         if (other.gameObject.CompareTag("Player"))
         {
             health.Damage(damage);

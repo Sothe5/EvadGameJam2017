@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4798364198220718}
   - component: {fileID: 33676920636637582}
   - component: {fileID: 23673204049981946}
+  - component: {fileID: 114812596812167510}
+  - component: {fileID: 64426242201916020}
   m_Layer: 0
   m_Name: RocaCamino01
   m_TagString: Untagged
@@ -50,7 +52,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -85,3 +87,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1273144953558274}
   m_Mesh: {fileID: 4300004, guid: 8d7a7c996bc834bc48d440a9a070446e, type: 3}
+--- !u!64 &64426242201916020
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1273144953558274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 8d7a7c996bc834bc48d440a9a070446e, type: 3}
+--- !u!114 &114812596812167510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1273144953558274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81c4d6a205644711bdb37a731df7666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 33
