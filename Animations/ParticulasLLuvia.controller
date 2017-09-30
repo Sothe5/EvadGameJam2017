@@ -8,18 +8,6 @@ AnimatorController:
   m_Name: ParticulasLLuvia
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: despejado
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: lluviaFuerte
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
   - m_Name: inicio
     m_Type: 3
     m_DefaultFloat: 0
@@ -70,9 +58,9 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: lluviaFuerte
-    m_EventTreshold: 0
+  - m_ConditionMode: 3
+    m_ConditionEvent: inicio
+    m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102986209894511260}
   m_Solo: 0
@@ -94,9 +82,9 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: lluviaFuerte
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: inicio
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102224175019681698}
   m_Solo: 0
@@ -118,9 +106,9 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: despejado
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: inicio
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102224175019681698}
   m_Solo: 0
@@ -142,9 +130,9 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: despejado
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: inicio
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102035089924040830}
   m_Solo: 0
