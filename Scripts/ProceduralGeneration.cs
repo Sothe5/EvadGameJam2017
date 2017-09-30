@@ -23,11 +23,10 @@ public class ProceduralGeneration : MonoBehaviour {
 		while (startingChunks.Count < chunksAhead) {
 			startingChunks.Add(this.GetChunk());
 		}
-		Vector3 lastPosition = this.transform.position;
+		Vector3 lastPosition = this.transform.position - new Vector3(0, 0, 10f);
 		float lastChunkLength = 0f;
 		foreach (GameObject chunk in startingChunks) {
 			float currentChunkLength = chunk.GetComponent<Chunk>().length;
-			Debug.Log (currentChunkLength);
 			lastPosition += new Vector3 (0, 0, lastChunkLength/2f + currentChunkLength/2);
 			lastChunkLength = currentChunkLength;
 			GameObject newChunk = Instantiate (chunk, lastPosition, Quaternion.identity) as GameObject;
