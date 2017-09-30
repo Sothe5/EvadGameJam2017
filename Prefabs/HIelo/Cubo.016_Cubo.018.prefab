@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4842621564842822}
   - component: {fileID: 33568410536122364}
   - component: {fileID: 23569488960328296}
+  - component: {fileID: 64346229070021212}
   m_Layer: 0
   m_Name: Cubo.016_Cubo.018
   m_TagString: Untagged
@@ -84,4 +85,18 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1184258408800568}
+  m_Mesh: {fileID: 4300122, guid: ea5965c7056b440c2ac9a7291e4dcdbd, type: 3}
+--- !u!64 &64346229070021212
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1184258408800568}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300122, guid: ea5965c7056b440c2ac9a7291e4dcdbd, type: 3}
