@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114979934913922608}
   - component: {fileID: 114592503366614096}
   - component: {fileID: 114942416697507944}
+  - component: {fileID: 114833291035787350}
   m_Layer: 0
   m_Name: Game controller
   m_TagString: Untagged
@@ -55,6 +56,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deadPanel: {fileID: 0}
   footCamera: {fileID: 0}
+--- !u!114 &114833291035787350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462925452165688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a53e4b5ebc7b104c948cd15e5638262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  timeBetweenFases: 3
 --- !u!114 &114942416697507944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,12 +80,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed0819a10d2d54488e83c995904ad46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToChangeLight: 30
+  timeToChangeLight: 5
   changedLight: {fileID: 0}
-  skyboxDay: {fileID: 0}
-  skyboxNight: {fileID: 0}
-  day: {r: 0, g: 0, b: 0, a: 0}
-  night: {r: 0, g: 0, b: 0, a: 0}
+  skyboxDay: {fileID: 2100000, guid: fdb77c3917027234db7a7792019eda2e, type: 2}
+  skyboxNight: {fileID: 2100000, guid: 0eaee02ea09b24dec96f8aaaf63710f3, type: 2}
+  day: {r: 0.6985294, g: 0.53473634, b: 0, a: 0}
+  night: {r: 0, g: 0.08113594, b: 0.7352941, a: 0}
 --- !u!114 &114979934913922608
 MonoBehaviour:
   m_ObjectHideFlags: 1
