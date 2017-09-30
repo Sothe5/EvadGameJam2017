@@ -42,7 +42,7 @@ public class Explosion : MonoBehaviour
                 power = Random.Range(powerRange[0], powerRange[1]);
                 Debug.Log(power);
                 rb.isKinematic = false;
-                rb.AddExplosionForce(power, explosionPosition, radius, upForce, ForceMode.Impulse);
+				rb.AddForce(Vector3.Normalize((this.transform.position - explosionPosition)) * power, ForceMode.Impulse);
             }
         }
 		//particleSystem.SetActive (true);
