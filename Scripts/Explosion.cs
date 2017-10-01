@@ -9,7 +9,7 @@ public class Explosion : MonoBehaviour
     public float[] powerRange = new float[2];
     public float upForce = 1;
     public GameObject parts;
-    public GameObject particleSystem;
+    public GameObject particles;
 
     private Vector3 explosionPosition;
     private Rigidbody rb;
@@ -45,7 +45,7 @@ public class Explosion : MonoBehaviour
 				rb.AddForce(Vector3.Normalize((hit.position - explosionPosition)) * power, ForceMode.Impulse);
             }
         }
-		//particleSystem.SetActive (true);
+		//particles.SetActive (true);
     }
 
 }
