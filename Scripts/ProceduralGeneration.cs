@@ -58,6 +58,7 @@ public class ProceduralGeneration : MonoBehaviour {
 		if (this.numberOfGeneratedChunks < this.chunksPerLevel) {
 			int nextChunkIndex = Random.Range (0, this.scenesPerLevel);
 			newChunk = this.chunks [this.currentLevel * this.chunksPerLevel + nextChunkIndex];
+			Debug.Log ("Index: " + nextChunkIndex);
 			this.numberOfGeneratedChunks++;
 		} else {
 			newChunk = this.transitionChunks [this.currentLevel];
