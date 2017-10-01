@@ -18598,8 +18598,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 10
   powerRange:
-  - 25
-  - 40
+  - 50
+  - 90
   upForce: 5
   parts: {fileID: 1423283870820826}
   particleSystem: {fileID: 1880130060582204, guid: 190b34ae67ea11a4089f3991ab171283,

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿	using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -42,7 +42,7 @@ public class Explosion : MonoBehaviour
                 power = Random.Range(powerRange[0], powerRange[1]);
                 Debug.Log(power);
                 rb.isKinematic = false;
-				rb.AddForce(Vector3.Normalize((hit.position - explosionPosition)) * power, ForceMode.Impulse);
+				rb.AddForce(Vector3.Normalize((this.transform.position - explosionPosition)) * power, ForceMode.Impulse);
             }
         }
 		//particles.SetActive (true);
